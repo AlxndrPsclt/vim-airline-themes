@@ -36,15 +36,18 @@ let s:cterm0C = 12
 let s:cterm0D = 12
 let s:cterm0E = 134
 let s:cterm0F = 12
+let s:cterm10 = 2
+let s:cterm11 = 3
+let s:cterm12 = 6
 
-let s:N1   = [ s:gui01, s:gui0B, s:cterm01, s:cterm0B ]
-let s:N2   = [ s:gui06, s:gui02, s:cterm06, s:cterm02 ]
-let s:N3   = [ s:gui09, s:gui01, s:cterm09, s:cterm01 ]
+let s:N1   = [ s:gui01, s:gui0B, s:cterm01, s:cterm0D ]
+let s:N2   = [ s:gui06, s:gui02, s:cterm06, s:cterm01 ]
+let s:N3   = [ s:gui09, s:gui01, s:cterm0C, s:cterm01 ]
 let g:airline#themes#base16_nord#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
 
-let s:I1   = [ s:gui01, s:gui0D, s:cterm01, s:cterm0D ]
-let s:I2   = [ s:gui06, s:gui02, s:cterm06, s:cterm02 ]
-let s:I3   = [ s:gui09, s:gui01, s:cterm09, s:cterm01 ]
+let s:I1   = [ s:gui01, s:gui0D, s:cterm02, s:cterm12 ]
+let s:I2   = [ s:gui06, s:gui02, s:cterm06, s:cterm01 ]
+let s:I3   = [ s:gui09, s:gui01, s:cterm0C, s:cterm01 ]
 let g:airline#themes#base16_nord#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)
 
 let s:R1   = [ s:gui01, s:gui08, s:cterm01, s:cterm08 ]
@@ -52,9 +55,9 @@ let s:R2   = [ s:gui06, s:gui02, s:cterm06, s:cterm02 ]
 let s:R3   = [ s:gui09, s:gui01, s:cterm09, s:cterm01 ]
 let g:airline#themes#base16_nord#palette.replace = airline#themes#generate_color_map(s:R1, s:R2, s:R3)
 
-let s:V1   = [ s:gui01, s:gui0E, s:cterm01, s:cterm0E ]
+let s:V1   = [ s:gui01, s:gui0E, s:cterm01, s:cterm11 ]
 let s:V2   = [ s:gui06, s:gui02, s:cterm06, s:cterm02 ]
-let s:V3   = [ s:gui09, s:gui01, s:cterm09, s:cterm01 ]
+let s:V3   = [ s:gui09, s:gui01, s:cterm0C, s:cterm01 ]
 let g:airline#themes#base16_nord#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)
 
 let s:IA1   = [ s:gui05, s:gui01, s:cterm05, s:cterm01 ]
